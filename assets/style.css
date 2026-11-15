@@ -21,3 +21,4 @@ nav a, .langs button { font-family: "Pixel", monospace; font-size: 10px; text-de
 footer { margin-top: 40px; font-size: 13px; opacity: .7; }
 [data-lang] { display: none; }
 [data-lang].on { display: block; }
+header img.logo { width: 96px; height: 96px; border-radius: 50%; border: 3px solid var(--line); }
