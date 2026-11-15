@@ -1,0 +1,23 @@
+@font-face { font-family: "Pixel"; src: url("PressStart2P-Regular.ttf") format("truetype"); font-display: swap; }
+:root { --bg: #120e23; --panel: #2a2942; --line: #535064; --text: #dacea4; --gold: #ebb85b; --hi: #fff1a9; --ice: #2a7d75; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--gold); }
+.wrap { max-width: 860px; margin: 0 auto; padding: 24px 20px 48px; }
+header { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+header img { width: 72px; height: 72px; image-rendering: pixelated; border: 3px solid var(--line); }
+h1, h2, h3, .pixel { font-family: "Pixel", monospace; letter-spacing: 1px; }
+h1 { color: var(--hi); font-size: 22px; margin: 0; }
+h2 { color: var(--gold); font-size: 14px; margin: 32px 0 8px; }
+h3 { color: var(--hi); font-size: 11px; margin: 20px 0 6px; }
+.tag { color: var(--text); opacity: .8; margin: 4px 0 0; }
+nav { margin: 20px 0; display: flex; gap: 8px; flex-wrap: wrap; }
+nav a, .langs button { font-family: "Pixel", monospace; font-size: 10px; text-decoration: none; color: var(--hi); background: var(--panel); border: 3px solid var(--line); padding: 8px 12px; cursor: pointer; }
+.langs { display: flex; gap: 6px; margin: 12px 0 4px; }
+.langs button[aria-pressed="true"] { background: var(--ice); }
+.shots { display: grid; gap: 12px; margin: 16px 0; }
+.shots img { width: 100%; image-rendering: pixelated; border: 3px solid var(--line); }
+.panel { background: var(--panel); border: 3px solid var(--line); padding: 16px 20px; margin: 16px 0; }
+footer { margin-top: 40px; font-size: 13px; opacity: .7; }
+[data-lang] { display: none; }
+[data-lang].on { display: block; }
